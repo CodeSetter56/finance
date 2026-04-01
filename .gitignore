@@ -1,0 +1,25 @@
+# Dependency directories (Never upload these, they are huge)
+node_modules/
+jspm_packages/
+
+# Build files (The compiled JavaScript)
+dist/
+out/
+*.tsbuildinfo
+
+# Environmental variables (CRITICAL: This contains your Neon DB password)
+.env
+.env.local
+.env.development.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS related files
+.DS_Store
+thumbs.db
+
+# Drizzle / Database tool files
+drizzle/
