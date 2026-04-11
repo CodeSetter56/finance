@@ -19,3 +19,4 @@ export const Records = pgTable('records', {
   description: text('description'),
   date: timestamp('date').defaultNow().notNull(),
 })
+
