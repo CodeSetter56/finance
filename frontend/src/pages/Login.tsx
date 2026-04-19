@@ -36,17 +36,18 @@ function Login() {
         role: data.user.role,
       })
 
-      switch (data.user.role) {
-        case 'admin':
-          navigate('/admin')
-          break
-        case 'user':
-          navigate('/user')
-          break
-        default:
-          navigate('/')
-          break
-      }
+      // switch (data.user.role) {
+      //   case 'admin':
+      //     navigate('/admin')
+      //     break
+      //   case 'user':
+      //     navigate('/user')
+      //     break
+      //   default:
+      //     navigate('/')
+      //     break
+      // }
+      navigate('/')
 
       console.log('Login successful:', data)
       
