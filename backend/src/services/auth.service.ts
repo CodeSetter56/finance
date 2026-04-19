@@ -110,7 +110,7 @@ export const refreshToken = async (req: Request, res: Response) => {
 
 export const logout = (req: Request, res: Response) => {
   try {
-    res.clearCookie('refreshToken', { httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'strict' })
+    res.clearCookie('refreshToken', { httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'strict', maxAge: 12 * 60 * 60 * 1000  })
     
     return res.status(200).json({ message: 'Logout successful' })
     
